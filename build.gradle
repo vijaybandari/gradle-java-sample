@@ -29,3 +29,7 @@ task integrationTest(type: Test, dependsOn: jar) {
 }
 
 check.dependsOn integrationTest
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '3.2'
+}
